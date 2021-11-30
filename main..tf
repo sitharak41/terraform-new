@@ -28,6 +28,12 @@ resource "azurerm_network_interface" "main" {
   }
 }
 
+
+
+
+
+
+
 resource "azurerm_windows_virtual_machine" "main" {
   name                = "${var.prefix}-VM"
   resource_group_name = azurerm_resource_group.main.name
