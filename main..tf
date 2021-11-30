@@ -27,13 +27,6 @@ resource "azurerm_network_interface" "main" {
     private_ip_address_allocation = var.ipaddressallocation
   }
 }
-
-
-
-
-
-
-
 resource "azurerm_windows_virtual_machine" "main" {
   name                = "${var.prefix}-VM"
   resource_group_name = azurerm_resource_group.main.name
